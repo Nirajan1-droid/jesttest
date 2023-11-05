@@ -1,0 +1,18 @@
+looking for 1% meaningful addition to the day:
+testing 
+npm test testfilename.js
+1.snapshot refers to the way of capturing and storing a representation of the rendered
+output of a react component at a particular point in time.snapshot are typically used for visual regression testing to 
+ensure that the UI of a component or application doesn't change unexpectedly.
+/tree as const storing snapshot later it is compared with the prev value of tree(saved in snapshot) to the newly changed structure . if the change is unintentional then snapshots comparision fails indicates the changes occured where and what did that.
+expect(tree).toMatchSnapshot();
+testing framework captures the current structure of "tree" as the snapshot at the first time.
+
+//if the changes are intentional then we first updateSnapshot to automatically update snapshots which prev tree const did. it overrides the prev tree structure.
+jest --updateSnapshot
+
+2.===
+expect(result).toBe(value);
+to check result === value
+
+3.
