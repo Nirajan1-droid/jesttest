@@ -1,1 +1,1 @@
-function checkinggitmerge.sh()
+function checkinggitmerge()
